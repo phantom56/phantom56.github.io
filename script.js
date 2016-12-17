@@ -7,6 +7,24 @@ window.onload = function(){
     clearTimeout(clearId);
   }, 500);
   
+ 
+  //появляется спец предложение
+  var spec = document.getElementById('spec');
+  var close = document.getElementById('close-spec');
+  var spec_inset = document.getElementById('spec-inset');
+  var timerId = setTimeout(function (){
+    spec.style.top = '-1px';
+    
+    clearTimeout(timerId);
+  }, 400);
+  close.onclick = function(){
+    spec.style.top = '-500px';
+    spec_inset.style.top = '67px';
+  }
+  spec_inset.onclick = function(){
+    spec.style.top = '-1px';
+    spec_inset.style.top = '-500px';
+  }
   
   //развертывание категории товара
   var list_products = document.getElementById('list_products');
