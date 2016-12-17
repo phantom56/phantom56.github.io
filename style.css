@@ -233,11 +233,11 @@ header a:hover{
   border-radius: 4px;
   padding: 18px 44px;
   font-size: 1.2em;
-  margin-bottom: 60px;
+  margin-bottom:60px;
   display: inline-block;
   zoom: 1;
 }
-.content_wide.preview a:hover {
+.content_wide.preview a:hover{
   background-color: #cd7200;
 }
 .content_wide.preview h1{
@@ -246,6 +246,44 @@ header a:hover{
 .content_wide.preview h1:first-child{
   margin-top:120px;
 }
+#spec{
+  color: #fff;
+  font-size: 1em;
+  text-transform: uppercase;
+  display: block;
+  position: fixed;
+  right: 0;
+  top: 0;
+  z-index: 999;
+  word-spacing: 2px;
+  /* background: #e47f00; */
+  border: 120px solid transparent;
+  border-top: 120px solid #1B2D57;
+  border-right: 120px solid #131E38;
+  text-align:center;
+}
+#spec img{
+  position: absolute;
+  top: -95px;
+  left: 25px;
+  width: 90px;
+  transform: rotate(50deg);
+}
+#spec a{
+  position: absolute;
+  top: -66px;
+  left: -88px;
+  line-height: 1.5;
+  margin: 0 auto;
+  transform: rotate(45deg);
+  white-space: nowrap;
+  font-size: 1.4em;
+  letter-spacing: -1px;
+  text-decoration:underline;
+}
+#spec a:hover{
+  color:#00ADAD;
+}
 .content_wide.news{
   background:#1B2D57;
 }
@@ -253,7 +291,7 @@ header a:hover{
   text-align: center;
   font-size: 1.4em;
   padding: 40px 10%;
-    margin: 0;
+  margin: 0;
 }
 .info{
   text-align: center;
@@ -295,10 +333,10 @@ header a:hover{
 
 /* footer */
 footer{
-  background: #fff;
+  background: #111118;
   overflow: hidden;
-  padding: 1.5% 0;
-  color: #131E38;
+  padding-bottom: 1.5%;
+  color: #F2F5F7;
   width: 100%;
 }
 footer img{
@@ -310,14 +348,11 @@ footer p{
   text-align:center;
 }
 footer .title{
-  margin-bottom:1%;
-}
-footer .title:last-child{
-  margin-top:10%;
+  margin-bottom:2%;
 }
 footer .partners, footer .contacts{
-  text-align:center;
-  padding:0 40px;
+  text-align: center;
+  padding: 1% 40px;
 }
 footer .partners img, footer .contacts img{
   display:inline-block;
@@ -326,6 +361,12 @@ footer .partners img, footer .contacts img{
 }
 footer .partners img{
   width:80px;
+}
+footer .partners{
+  background:white;
+}
+footer .contacts p:not(.title){
+  font-size:1.1em;
 }
 #contacts-call{
   margin: 0;
