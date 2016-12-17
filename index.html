@@ -7,7 +7,7 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <link rel="stylesheet" href="assets/style.css" type="text/css">
 <title>Снабжение и комплектация в Ростове-на-Дону / РостЗаказ</title>
-<link href="images/icon.png" rel="icon"/>
+<link href="assets/images/icon.png" rel="icon"/>
 </head>
 
 <body>
@@ -52,12 +52,12 @@
           <img alt="РостЗаказ" src="assets/images/logo.png">
         </a>
       </li>
-      <li><a href="#about">О нас</a></li>
-      <li><a href="#catalog">Каталог</a></li>
-      <li><a href="#news">Новости</a></li>
-      <li><a href="#partners">Партнеры</a></li>
-      <li><a href="#contacts">Контакты</a></li>
-      <li><a href="#price">Прайс</a></li>
+      <li><a class="navigate-link" href="#about">О нас</a></li>
+      <li><a class="navigate-link" href="#catalog">Каталог</a></li>
+      <li><a class="navigate-link" href="#price">Прайс</a></li>
+      <li><a class="navigate-link" href="#news">Новости</a></li>
+      <li><a class="navigate-link" href="#partners">Партнеры</a></li>
+      <li><a class="navigate-link" href="#contacts">Контакты</a></li>
     </ul>
   </header>
 
@@ -67,7 +67,7 @@
       <h1>Смело заказывай!</h1>
       <h1>Строй надежно!</h1>
       <h2>Приобретите проверенные товары по оптовым ценам</h2>
-      <a href="#catalog">Перейти к каталогу</a>
+      <a class="navigate-link" href="#catalog">Перейти к каталогу</a>
     </div>
     <div class="preview_image">
       <img src="assets/images/preview.png" alt="preview image">
@@ -92,7 +92,7 @@
 </div>
 
 <!-- Каталог -->
-<p class="title" id="catalog">КАТАЛОГ ПРОДУКТОВ</p>
+<p class="title" id="catalog">КАТАЛОГ ПРОДУКТОВ<sup> <a class="note" href="#notes">[Цены уточняйте у менеджера]</a></sup></p>
 <div class="content_wide">
   <ul id="list_products">
     <!-- <p>Выберите тип товара</p> -->
@@ -363,6 +363,12 @@
       </li>
       
   </ul>
+
+  <div id="notes">
+    <h3>Примечания</h3>
+    1. Цены уточняйте у менеджера.
+  </div>
+
 </div>
   
 <!-- Прайс -->

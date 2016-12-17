@@ -130,10 +130,19 @@ color: #FAFAFA;
   margin-top: 100px;
 
 }
-
-
 /* /preloader */
 
+.note:hover{
+  opacity:0.8;
+  color:#e47f00;
+}
+.note{
+  color:#E47F00;
+  font-size:.7em;
+}
+#notes{
+  padding: 60px 20px;
+}
 /* header */
 header{
   -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2);

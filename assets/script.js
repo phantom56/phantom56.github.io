@@ -26,6 +26,19 @@ window.onload = function(){
     spec_inset.style.top = '-500px';
   }
   
+  
+  //плавная прокрутка к якорю
+  var navigate_link = document.getElementsByClassName('navigate-link');
+   function func(path){
+      window.location.hash = path;
+    };
+  toAnchor = function(){
+    func(this.getAttribute('href'));
+    return false;
+  }
+  for (var i = 0, navigate_link; navigate_link < navigate_link[i]; i++)
+    navigate_link[i].onclick = toAnchor;
+  
   //развертывание категории товара
   var list_products = document.getElementById('list_products');
   var menu_item = list_products.getElementsByClassName('extendable');
