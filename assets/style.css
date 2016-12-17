@@ -282,6 +282,7 @@ header a:hover{
   display:block;
   margin:0 auto;
   margin-top:60px;
+  width: 80%;
 }
 #spec a{
   background-color: #00ADAD;
@@ -292,6 +293,7 @@ header a:hover{
   border-radius: 4px;
   padding: 10px 16px;
   display: inline-block;
+  font-size:1.2em;
   zoom: 1;
 }
 #spec a:hover{
@@ -329,6 +331,9 @@ header a:hover{
 .content_wide.news{
   background:#1B2D57;
 }
+.content_wide.price{
+  background:#1B2D57;
+}
 .content_wide.preview_text p{
   text-align: center;
   font-size: 1.4em;
@@ -339,6 +344,19 @@ header a:hover{
   text-align: center;
   margin-bottom: 30px;
   font-size: 1.4em;
+}
+
+/*прайс-листы*/
+.content_wide.price{}
+.content_wide.price img{width:100px;}
+.content_wide.price .price-item:hover{
+  background: #131E38;
+}
+.content_wide.price .price-item{
+  display: table-cell;
+  padding: 1%;
+  font-size: 0.8em;
+  text-align:center;
 }
 
 

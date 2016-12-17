@@ -16,7 +16,7 @@ window.onload = function(){
     spec.style.top = '-1px';
     
     clearTimeout(timerId);
-  }, 400);
+  }, 4000);
   close.onclick = function(){
     spec.style.top = '-500px';
     spec_inset.style.top = '67px';
