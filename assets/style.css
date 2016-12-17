@@ -96,7 +96,6 @@ color: #FAFAFA;
   color: #e47f00;
 }
 
-
 /* preloader */
 #preloader-block{
   z-index: 9999;
@@ -250,8 +249,8 @@ header a:hover{
   position:fixed;
   top:-500px;
   right:2%;
-  border:1px solid #00ADAD;
-  background:#131E38;
+  border: 1px solid #131E38;
+  background: #E47F00;
   width:300px;
   border-radius:0 0 8px 8px;
   padding:20px;
@@ -285,7 +284,7 @@ header a:hover{
   width: 80%;
 }
 #spec a{
-  background-color: #00ADAD;
+  background-color: #131E38;
   -webkit-box-shadow: inset 0 -2px 0 rgba(34,34,40,0.225);
   -moz-box-shadow: inset 0 -2px 0 rgba(34,34,40,0.225);
   box-shadow: inset 0 -2px 0 rgba(34,34,40,0.225);
@@ -297,7 +296,7 @@ header a:hover{
   zoom: 1;
 }
 #spec a:hover{
-  background-color: #059A9A;
+  background-color: #1A284A;
 }
 #spec-inset img:hover{
   opacity:1;
@@ -313,7 +312,7 @@ header a:hover{
   right: 2%;
   padding: 10px;
   padding-top: 14px;
-  border: 1px solid #00ADAD;
+  border: 1px solid #131E38;
   background: #131E38;
   width: 30px;
   border-radius: 0 0 8px 8px;
@@ -348,7 +347,7 @@ header a:hover{
 
 /*прайс-листы*/
 .content_wide.price{}
-.content_wide.price img{width:100px;}
+.content_wide.price img{width:50px;}
 .content_wide.price .price-item:hover{
   background: #131E38;
 }
