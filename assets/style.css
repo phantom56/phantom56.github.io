@@ -360,6 +360,7 @@ header a:hover{
   padding: 1%;
   font-size: 0.8em;
   text-align:center;
+  min-width:15vw;
 }
 
 
