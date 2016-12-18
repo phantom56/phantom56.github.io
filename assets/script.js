@@ -65,9 +65,20 @@ window.onload = function(){
 
 
 (function(){ 
-
+  //прыгает живосайт
   showJivoChat = function(){
-    
+    var jivo = document.getElementById('jivo-iframe-container');
+    var count = 0;
+    if(jivo)var timerId1 = setTimeout(function (){
+      if(jivo.style.bottom == '0')
+        jivo.style.bottom = '20px';
+      else if(jivo.style.bottom == '20px')
+        jivo.style.bottom = '0';
+      if(count == 4)
+        return;
+      count++;
+    clearTimeout(timerId1);
+    }, 300);
   }
 
 
