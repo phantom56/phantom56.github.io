@@ -67,10 +67,10 @@ window.onload = function(){
 (function(){ 
 
   showJivoChat = function(){
-    jivo_api.open();
+    
   }
 
-}
+
  
   
 })();
