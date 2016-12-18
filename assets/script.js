@@ -27,17 +27,23 @@ window.onload = function(){
   }
   
   
-  //плавная прокрутка к якорю
+  //прокрутка к якорю
   var navigate_link = document.getElementsByClassName('navigate-link');
-   function func(path){
-      window.location.hash = path;
-    };
+  
+  function getOffset(elem) {
+    var top = elem.getBoundingClientRect()['top'] - 70;//получаем значение
+    var left = elem.getBoundingClientRect()['left'];
+    console.log(window.scrollBy(left, top));//прокручиваем
+  }
   toAnchor = function(){
-    func(this.getAttribute('href'));
+    getOffset(document.getElementById(this.getAttribute('href').split('#')[1]));//передаем объект - цель
     return false;
   }
   for (var i = 0, navigate_link; navigate_link < navigate_link[i]; i++)
     navigate_link[i].onclick = toAnchor;
+  
+  
+  
   
   //развертывание категории товара
   var list_products = document.getElementById('list_products');
@@ -60,7 +66,11 @@ window.onload = function(){
 
 (function(){ 
 
-  
+  showJivoChat = function(){
+    jivo_api.open();
+  }
+
+}
  
   
 })();

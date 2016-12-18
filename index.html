@@ -42,8 +42,8 @@
 </script>
 <!-- /preloader -->
 
-<!-- main -->
-<div class="main">
+<!-- content -->
+<div class="content">
   <!-- header -->
   <header>
     <ul>
@@ -92,7 +92,7 @@
 </div>
 
 <!-- Каталог -->
-<p class="title" id="catalog">КАТАЛОГ ПРОДУКТОВ<sup> <a class="note" href="#notes">[Цены уточняйте у менеджера]</a></sup></p>
+<p class="title" id="catalog">КАТАЛОГ ПРОДУКТОВ<sup> <a class="note" href="#notes" onclick="showJivoChat()">[Цены уточняйте у менеджера]</a></sup></p>
 <div class="content_wide">
   <ul id="list_products">
     <!-- <p>Выберите тип товара</p> -->
@@ -364,10 +364,6 @@
       
   </ul>
 
-  <div id="notes">
-    <h3>Примечания</h3>
-    1. Цены уточняйте у менеджера.
-  </div>
 
 </div>
   
@@ -434,12 +430,12 @@
 </div>
 
 </div>
-<!-- /main -->
+<!-- /content -->
 
 <!-- футер -->
 <footer>
-<div class="partners" id="partners">
-  <p class="title">МЫ СОТРУДНИЧАЕМ:</p>
+<p class="title" id="partners">МЫ СОТРУДНИЧАЕМ:</p>
+<div class="partners">
   <img alt="ВОЛМА" title="ВОЛМА" src="assets/images/partners/volma.png">
   <img alt="ТиМ" title="ТиМ" src="assets/images/partners/tim.png">
   <img alt="knauf" title="knauf" src="assets/images/partners/knauf.png">
@@ -490,8 +486,8 @@
 </div>
 
 
-<div class="contacts" id="contacts">
-  <p class="title">НАШИ КОНТАКТЫ<img alt="Наши контакты" src="assets/images/call.png" id="contacts-call"></p>
+<p class="title" id="contacts">НАШИ КОНТАКТЫ</p>
+<div class="contacts">
   <!--<a title="Наша группа ВКонтакте" href="https://vk.com/" target="_blank">
     <img alt="VK РостЗаказ" src="assets/images/vk.png">
   </a>-->
@@ -509,7 +505,7 @@
 <!-- BEGIN JIVOSITE CODE {literal} -->
 <script asunc type='text/javascript'>
 (function(){ var widget_id = 'KvJnDxkAvU';var d=document;var w=window;function l(){
-var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();jivo_api.open();</script>
 <!-- {/literal} END JIVOSITE CODE -->
 
 </body>

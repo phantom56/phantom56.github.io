@@ -71,14 +71,8 @@ body{
 a{
   outline: none;
 }
-.main{
-  min-height: 100vh;
-}
 .content{
-  margin:10px auto;
-  margin-bottom:0;
-  width: 75%;
-  background: rgba(0,0,0,0.1);
+  min-height: 100vh;
 }
 a{
 text-decoration: none;
@@ -91,7 +85,8 @@ color: #FAFAFA;
 
 .title{
   font-size: 2em;
-  margin: 4%;
+  padding: 4%;
+  margin:0;
   text-align: center;
   color: #e47f00;
 }
@@ -415,12 +410,12 @@ footer img{
 footer p{
   text-align:center;
 }
-footer .title{
-  margin-bottom:2%;
+#partners{
+  background:#fff;
 }
 footer .partners, footer .contacts{
   text-align: center;
-  padding: 1% 40px;
+  padding: 0 40px;
 }
 footer .partners img, footer .contacts img{
   display:inline-block;
@@ -432,15 +427,10 @@ footer .partners img{
 }
 footer .partners{
   background:white;
+  padding-bottom:4%;
 }
 footer .contacts p:not(.title){
   font-size:1.1em;
-}
-#contacts-call{
-  margin: 0;
-  margin-left: 12px;
-  width: 25px;
-  transition: 0.25s ease-in-out;
 }
 /* /footer */
 
