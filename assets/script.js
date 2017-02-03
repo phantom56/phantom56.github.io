@@ -9,7 +9,7 @@ window.onload = function(){
   
  
   //появляется спец предложение
-  var spec = document.getElementById('spec');
+  /*var spec = document.getElementById('spec');
   var close = document.getElementById('close-spec');
   var spec_inset = document.getElementById('spec-inset');
   var timerId = setTimeout(function (){
@@ -24,7 +24,7 @@ window.onload = function(){
   spec_inset.onclick = function(){
     spec.style.top = '-1px';
     spec_inset.style.top = '-500px';
-  }
+  }*/
   
   
   //прокрутка к якорю
