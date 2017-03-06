@@ -439,12 +439,14 @@ footer .contacts p:not(.title){
 /*  /products  */
 #list_products{
   padding: 60px 20px;
+  overflow:hidden;
+  padding:0 20px;
 }
 #list_products .menu_item > *{
   text-transform:none;
 }
 #list_products .menu_item{
-  display: inline-block;
+  display: none;
 	zoom: 1;
   vertical-align: top;
   margin: 40px 20px;
@@ -507,7 +509,21 @@ footer .contacts p:not(.title){
   right: -4px;
   top: 9px;
 }
-
+.visible{
+  display:inline-block!important;
+}
+#show-products{
+  text-align:center;
+  padding:4%;
+  color:#E47F00;
+}
+#show-products span:hover{
+  
+}
+#show-products span{
+  cursor:pointer;
+	font-size: 1.4em;
+}
 /* ### /products  */
 
 

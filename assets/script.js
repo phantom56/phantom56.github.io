@@ -7,7 +7,28 @@ window.onload = function(){
     clearTimeout(clearId);
   }, 500);
   
- 
+  //показать продукцию
+  var butt_show_products = document.getElementById('show-products').getElementsByTagName('span')[0];//кнопка
+  var products = document.getElementById('list_products');
+
+  var productsIsVisible = false;
+  butt_show_products.onclick = function(){
+    Array.from(products.children).forEach(show_all_products);
+    productsIsVisible = !productsIsVisible;
+  }
+  function show_all_products(element, numb, arr){
+    if(productsIsVisible == false){
+      element.classList.add('visible');
+      butt_show_products.innerHTML = "Свернуть перечень";
+    }
+    else {
+      if(numb > 2){
+        element.classList.remove('visible');
+      butt_show_products.innerHTML = "Просмотреть полный перечень";
+      }
+    }
+      
+  }
   //появляется спец предложение
   /*var spec = document.getElementById('spec');
   var close = document.getElementById('close-spec');
