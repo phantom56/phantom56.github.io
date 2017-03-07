@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta name="description" content="Снабжение и комплектация по низким ценам в Ростове-на-Дону и по Ростовской области оптом и в розницу | РостЗаказ" />
+<meta name="keywords" content="Снабжение и комплектация по низким ценам в Ростове-на-Дону и по Ростовской области оптом и в розницу РостЗаказ" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="stylesheet" href="assets/style.css" type="text/css">
+<title>Снабжение и комплектация в Ростове-на-Дону / РостЗаказ</title>
+<link href="assets/images/icon.png" rel="shortcut icon" type="image/png"/>
+</head>
+
+<body>
+<!-- preloader -->
+<div id="preloader-block">
+  <div id="preloader-background">
+    <span id="preloader-runner"></span>
+    <div id="preloader-text">Пожалуйста, подождите ...</div>
+  </div>
+</div>
+<script>
+  var jumpId = setTimeout(preloader_jump, 0);
+
+  var preloader_jump_var = 0;
+  var preloader_jump_direction = 0;//0 - направо, 1 - налево
+  var step = 100;
+  function preloader_jump(){
+    var preloader_runner = document.getElementById('preloader-runner');
+    if(preloader_jump_var == 0)// проверка направления
+      preloader_jump_direction = 0;
+    else if(preloader_jump_var == 100)
+      preloader_jump_direction = 1;
+    
+    if(preloader_jump_direction == 0)
+      preloader_jump_var += step;
+    else preloader_jump_var -= step;
+    
+    preloader_runner.style.left = preloader_jump_var + '%';
+    
+    jumpId = setTimeout(preloader_jump, 2000);
+  }
+</script>
+<!-- /preloader -->
+
+<!-- content -->
+<div class="content">
+  <!-- header -->
+  <header>
+    <ul>
+      <li>
+        <a class="logo" href="test.html">
+          <img alt="РостЗаказ" src="assets/images/logo.png">
+        </a>
+      </li>
+      <li><a class="navigate-link" href="#about">О нас</a></li>
+      <li><a class="navigate-link" href="#catalog">Каталог</a></li>
+      <!--<li><a class="navigate-link" href="#price">Прайс</a></li>-->
+      <li><a class="navigate-link" href="#news">Новости</a></li>
+      <li><a class="navigate-link" href="#partners">Партнеры</a></li>
+      <li><a class="navigate-link" href="#contacts">Контакты</a></li>
+    </ul>
+  </header>
+
+  <!-- preview -->
+  <div class="content_wide preview" style="background:#1B2D57;padding-top: 10px;">
+    <div class="container">
+      <h1>Смело заказывай!</h1>
+      <h1>Строй надежно!</h1>
+      <h2>Приобретите проверенные товары по оптовым ценам</h2>
+      <a class="navigate-link" href="#catalog">Перейти к каталогу</a>
+    </div>
+    <div class="preview_image">
+      <img src="assets/images/preview.png" alt="preview image">
+    </div>
+  </div>
+  <!--<div id="spec">
+    <img src="assets/images/close.png" alt="Закрыть" id="close-spec">
+    <img class="image" src="assets/images/spec_winter.png" alt="Специальное предложение">
+    <p>Близятся праздники, а мы порадуем вас новогодним спецпредложением!</p>
+    <a class="button" href="price-lists/spec-predlozhenie-smesi(rostzakaz).pdf" target="_blank">Перейти к ознакомлению (pdf)</a>
+  </div>
+  <div id="spec-inset">
+    <img src="assets/images/inset.png" alt="Открыть" id="open-spec">
+  </div>-->
+
+
+  
+<!-- О нас -->
+<p class="title" id="about">О НАС</p>
+<div class="content_wide preview_text">
+  <p>В условиях высокой конкуренции возникает проблема подбора поставщиков, на этот случай есть РостЗаказ. РостЗаказ - это сервис для строительных компаний, целью которого является помощь в минимизации затрат на строительные материалы при строительстве. Мы готовы поставлять Вам строительные материалы напрямую от производителя по гарантированно низкой цене. Ведь самое главное для нас, это помочь Вам сэкономить на закупке. Мы по-настоящему ценим каждого партнера и каждого клиента! В нашем ассортименте более 150 000 различных позиций. РостЗаказ - это компания-снабженец, которая укомплектует Вас всеми необходимыми материалами. Наш отдел исследований ежедневно занимается мониторингом цен на рынке строительных материалов. Каждый день мы работаем для Вас и стараемся Вам помочь. Мы открыты для новых знакомств и всегда готовы сотрудничать со строительными компаниями вне зависимости от их масштабов.</p>
+</div>
+
+<!-- Каталог -->
+<p class="title" id="catalog">КАТАЛОГ ПРОДУКТОВ<sup> <a class="note" href="#notes" onclick="showJivoChat()">[Уточнить цены у менеджера]</a></sup></p>
+<div class="content_wide">
+  <ul id="list_products">
+    <!-- <p>Выберите тип товара</p> -->
+      
+      <li class="menu_item visible" product-type="Power_tools">Электроинструменты
+        <ul>
+          <li>Бетономешалки</li>
+          <li>Граверы электрические</li>
+          <li>Дисковые пилы</li>
+          <li>Дрели ударные</li>
+          <li>Дрели-шуруповерты аккумуляторные</li>
+          <li>Ленточные шлифмашины</li>
+          <li>Лобзики электрические</li>
+          <li>Отрезные пилы</li>
+          <li>Перфораторы</li>
+          <li>Рубанки электрические</li>
+          <li>Станки для заточки цепей</li>
+          <li>Термопистолеты</li>
+          <li>Точильные станки</li>
+          <li>Углошлифовальные машины</li>
+          <li>Фрезерные машины</li>
+        </ul>
+      </li>
+      
+       <li class="menu_item visible" product-type="Construction_mixtures">Сухие строительные смеси и грунты
+        <ul>
+          <li>Штукатурки </li>
+          <li>Аксессуары для штукатурки </li>
+          <li>Шпатлевки </li>
+          <li>Ровнители и стяжки для пола </li>
+          <li>Клей для плитки </li>
+          <li>Затирки для швов </li>
+          <li>Цемент, песок и цементно-песчаные смеси </li>
+          <li>Смеси кладочно-монтажные </li>
+          <li>Общестроительные смеси </li>
+          <li>Клей для изоляционных материалов </li>
+          <li>Грунтовки </li>
+        </ul>
+      </li>
+      
+      <li class="menu_item visible" product-type="Roof">Кровля
+        <ul>
+          <li>Профнастил </li>
+          <li>Металлочерепица </li>
+          <li>Поликарбонат и аксессуары </li>
+          <li>Аксессуары для металлической кровли </li>
+          <li>Черепица </li>
+          <li>Битумная кровля и аксессуары </li>
+          <li>Рулонная битумная кровля </li>
+          <li>Аксессуары для кровли </li>
+          <li>Флюгеры </li>
+        </ul>
+      </li>
+        
+      <li class="menu_item" product-type="Hand_tools">Ручные инструменты
+        <ul>
+          <li class="extendable">Абразивный инструмент
+            <ul>
+              <li>Бруски абразивные</li>
+              <li>Круги отрезные</li>
+              <li>Круги шлифовальные</li>
+              <li>Ленты бесконечные</li>
+              <li>Шлифлисты</li>
+            </ul>
+          </li>
+          
+          <li class="extendable">Крепёжный инструмент
+            <ul>
+              <li>Хомуты</li>              
+            </ul>
+          </li>
+          
+          <li class="extendable">Отделочный инструмент
+            <ul>
+              <li>Валики</li>
+              <li>Шпатели</li>              
+            </ul>
+          </li>
+          
+          <li class="extendable">Прочий инструмент
+            <ul>
+              <li>Воронки</li>
+              <li>Стремянки</li>
+              <li>Ящики для инструмента</li>              
+            </ul>
+          </li>
+          
+          <li class="extendable">Садовый инвентарь
+            <ul>
+              <li>Лопаты</li>              
+            </ul>
+          </li>
+          
+          <li class="extendable">Слесарный инструмент
+            <ul>
+              <li>Кувалды</li>
+              <li>Киянки</li>              
+            </ul>
+          </li>
+          
+          <li class="extendable">Средства индивидуальной защиты
+            <ul>
+              <li>Перчатки ПВХ</li>
+            </ul>
+          </li>
+          
+          <li class="extendable">Столярный инструмент
+            <ul>
+              <li>Колуны</li>
+              <li>Лобзики ручные,пилки</li>
+              <li>Ломы, гвоздодеры</li>              
+              <li>Ножовки,пилы,двуручные</li>              
+              <li>Стусла</li>              
+              <li>Топоры, топорища</li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+     
+      <li class="menu_item" product-type="Accessories_for_power_tools">Оснастка для электроинструментов
+        <ul>
+          <li>Биты и насадки для дрелей и шуруповертов</li>
+          <li>Сверла</li>
+          <li>Коронки</li>
+          <li>Буры SDS</li>
+          <li>Отрезные, абразивные и алмазные диски</li>
+          <li>Оснастка для ленточных шлифмашин</li>
+          <li>Оснастка для эксцентриковых шлифмашин</li>
+          <li>Оснастка для дисковых шлифмашин</li>
+        </ul>
+      </li>
+      
+       <li class="menu_item" product-type="Fasteners_hardware">Крепежные изделия, метизы
+       <ul>
+          <li>Саморезы</li>
+          <li>Гвозди</li>
+          <li>Болты, винты</li>
+          <li>Шайбы, гайки</li>
+          <li>Дюбели</li>
+          <li>Дюбель-гвозди и дюбель-шурупы</li>
+          <li>Анкеры</li>
+          <li>Уголки монтажные</li>
+        </ul>
+      </li>
+      
+       <li class="menu_item" product-type="Insulation">Изоляция
+        <ul>
+          <li>Минеральная вата</li>
+          <li>Пенополистирол и экструдированный пенополистирол XPS</li>
+          <li>Фольгированная изоляция</li>
+          <li>Поролон</li>
+          <li>Пакля</li>
+          <li>Другие изоляционные материалы</li>
+        </ul>
+      </li>
+      
+      <li class="menu_item" product-type="Thermal_aid">Тепловое оборудование
+        <ul>
+          <li>Инфракрасные обогреватели</li>
+          <li>Конвекторы</li>
+          <li>Масляные радиаторы</li>
+          <li>Тепловентиляторы</li>
+          <li>Тепловые завесы</li>
+          <li>Тепловые пушки</li>
+        </ul>
+      </li>
+      
+       <li class="menu_item" product-type="Wall_panels">Стеновые панели
+        <ul>
+          <li>Панели ПВХ</li>
+          <li>Панели МДФ</li>
+          <li>Листовые панели</li>
+          <li>Комплектующие и декоративные уголки</li>
+          <li>Вагонка и обшивка деревом</li>
+        </ul>
+      </li>
+      
+      <li class="menu_item" product-type="Stabilizers_Latro">Стабилизаторы, ЛАТРы
+        <ul>
+          <li>ЛАТРы</li>
+          <li>Стабилизаторы релейные с цифровым дисплеем</li>
+          <li>Стабилизаторы трехфазные</li>
+          <li>Стабилизаторы электромех. мощные однофазные</li>
+          <li>Тепловое оборудование</li>
+        </ul>
+      </li>
+      
+      <li class="menu_item" product-type="Tile">Плитка
+        <ul>
+          <li>Настенная плитка</li>
+          <li>Напольная плитка</li>
+          <li>Керамогранит</li>
+          <li>Мозаика</li>
+          <li>Бордюры и вставки</li>
+        </ul>
+      </li>
+      
+      <li class="menu_item" product-type="Paints">Краски
+        <ul>
+          <li>Краски для внутренних работ</li>
+          <li>Краски для наружных работ</li>
+          <li>Декоративные штукатурки</li>
+          <li>Эмали</li>
+          <li>Растворители</li>
+        </ul>
+      </li>
+      
+      <li class="menu_item" product-type="Profiles">Профили
+        <ul>
+          <li>Алюминиевый профиль</li>
+          <li>Латунный профиль</li>
+          <li>Пластиковый профиль</li>
+          <li>Стальной профиль</li>
+        </ul>
+      </li>
+      
+      <li class="menu_item" product-type="Gardening_equipment">Садовая техника
+        <ul>
+          <li>Бензиновые триммеры</li>
+          <li>Бензопилы</li>
+          <li>Газонокосилки бензиновые</li>
+          <li>Газонокосилки электрические</li>
+        </ul>
+      </li>
+      
+      <li class="menu_item" product-type="Motor_cultivators_and_tillers">Мотокультиваторы и мотоблоки
+        <ul>
+          <li>Мотопомпы Huter</li>
+          <li>Снегоуборщики Huter</li>
+          <li>Электрические триммеры</li>
+          <li>Электропилы</li>
+        </ul>
+      </li>
+
+      <li class="menu_item" product-type="Pumps">Насосы
+        <ul>
+          <li>Вибрационные насосы</li>
+          <li>Гидроаккумуляторы</li>
+          <li>Дренажные</li>
+        </ul>
+      </li>
+      
+      <li class="menu_item" product-type="Electricity_generators">Электрогенераторы
+        <ul>
+          <li>Бензиновые</li>
+          <li>Дизельные портативные</li>
+          <li>Инверторные</li>
+        </ul>
+      </li>
+      
+      <li class="menu_item" product-type="Radiators">Радиаторы
+        <ul>
+          <li>Трубозапорная арматура для радиаторов</li>
+          <li>Решетки для радиаторов</li>
+        </ul>
+      </li>  
+      
+      <li class="menu_item" product-type="Welders">Сварочные аппараты
+        <ul>
+        
+        </ul>
+      </li>
+      
+      <li class="menu_item" product-type="Pressure_Washers_Huter">Мойки высокого давления Huter
+        <ul>
+          
+        </ul>
+      </li>
+      
+  </ul>
+	<div id="show-products">
+		<span>Просмотреть полный перечень</span>
+	</div>
+
+</div>
+  
+<!-- Прайс
+<p class="title" id="price">ПРАЙС ЛИСТЫ</p>
+<div class="content_wide price">
+  <div class="topNews">
+    <a href="price-lists/Вебер Ветонит.pdf" target="_blank" class="price-item">
+      <img src="assets/images/pdf.png" alt="Полимерцементные сухие смеси (Weber-Vetonit)">
+      <h2>Полимерцементные сухие смеси (Weber-Vetonit)</h2>
+    </a>
+
+    <a href="price-lists/Кнауф.pdf" target="_blank" class="price-item">
+      <img src="assets/images/pdf.png" alt="Кратон">
+      <h2>(Knauf)</h2>
+    </a>
+
+    <a href="price-lists/Тойлер.pdf" target="_blank" class="price-item">
+      <img src="assets/images/pdf.png" alt="Зубр">
+      <h2>Полимерцементные сухие смеси (TOILER)</h2>
+    </a>
+
+    <a href="price-lists/Водостоки.xlsx" target="_blank" class="price-item">
+      <img src="assets/images/xlsx.png" alt="ВОДОСТОКИ МЕТАЛЛИЧЕСКИЕ Aquasystem (Россия), Grand Line (Россия), Ruukki (Финляндия), Optima (Россия), Металл Профиль (Россия)">
+      <h2>Кровельные материалы - водостоки</h2>
+    </a>
+    
+    <a href="price-lists/Ондулин.xls" target="_blank" class="price-item">
+      <img src="assets/images/xlsx.png" alt="Knauf">
+      <h2>Ондулин</h2>
+    </a>
+  </div>
+</div> -->
+  
+<!-- Новости -->
+<p class="title" id="news">НОВОСТИ</p>
+<div class="content_wide news">
+  <div class="topNews">
+    <a class="news_item">
+      <img src="assets/images/news/1.jpg" alt="BiberMix">
+      <p>В нашем ассортименте появилась продукция BiberMix</p>
+    </a>
+
+    <a class="news_item">
+      <img src="assets/images/news/2.jpg" alt="Кратон">
+      <p>Производитель сварочного оборудования &laquo;Кратон&raquo; согласен с нами сотрудничать</p>
+    </a>
+
+    <a class="news_item">
+      <img src="assets/images/news/3.jpg" alt="Зубр">
+      <p>&laquo;Зубр&raquo; - инструменты, материалы и оборудование - тоже с нами!</p>
+    </a>
+
+    <a class="news_item">
+      <img src="assets/images/news/4.jpg" alt="Knauf">
+      <p>Мы расширили ассортимент продукции Knauf</p>
+    </a>
+  </div>
+</div>
+
+</div>
+<!-- /content -->
+
+<!-- футер -->
+<footer>
+<p class="title" id="partners">МЫ СОТРУДНИЧАЕМ:</p>
+<div class="partners">
+  <img alt="ВОЛМА" title="ВОЛМА" src="assets/images/partners/volma.png">
+  <img alt="ТиМ" title="ТиМ" src="assets/images/partners/tim.png">
+  <img alt="knauf" title="knauf" src="assets/images/partners/knauf.png">
+  <img alt="ЕвроЛ" title="ЕвроЛ" src="assets/images/partners/evro.l.png">
+  <img alt="BiberMix" title="BiberMix" src="assets/images/partners/bibermix.png">
+  <img alt="aquasystem" title="aquasystem" src="assets/images/partners/aquasystem.png">
+  <img alt="arcelormittal" title="arcelormittal" src="assets/images/partners/arcelormittal.png">
+  <img alt="aurubis" title="aurubis" src="assets/images/partners/aurubis.png">
+  <img alt="braas" title="braas" src="assets/images/partners/braas.png">
+  <img alt="creaton" title="creaton" src="assets/images/partners/creaton.png">
+  <img alt="dachkeramik" title="dachkeramik" src="assets/images/partners/dachkeramik.png">
+  <img alt="delta" title="delta" src="assets/images/partners/delta.png">
+  <img alt="docke" title="docke" src="assets/images/partners/docke.png">
+  <img alt="d-tack" title="d-tack" src="assets/images/partners/d-tack.png">
+  <img alt="erlus" title="erlus" src="assets/images/partners/erlus.png">
+  <img alt="flender" title="flender" src="assets/images/partners/flender.png">
+  <img alt="g" title="g" src="assets/images/partners/g.png">
+  <img alt="galeco" title="galeco" src="assets/images/partners/galeco.png">
+  <img alt="grandline" title="grandline" src="assets/images/partners/grandline.png">
+  <img alt="hamk" title="hamk" src="assets/images/partners/hamk.png">
+  <img alt="icopal" title="icopal" src="assets/images/partners/icopal.png">
+  <img alt="izospan" title="izospan" src="assets/images/partners/izospan.png">
+  <img alt="juta" title="juta" src="assets/images/partners/juta.png">
+  <img alt="katepal" title="katepal" src="assets/images/partners/katepal.png">
+  <img alt="kme" title="kme" src="assets/images/partners/kme.png">
+  <img alt="koramic" title="koramic" src="assets/images/partners/koramic.png">
+  <img alt="kraton" title="kraton" src="assets/images/partners/kraton.png">
+  <img alt="lindab" title="lindab" src="assets/images/partners/lindab.png">
+  <img alt="luxard" title="luxard" src="assets/images/partners/luxard.png">
+  <img alt="mage" title="mage" src="assets/images/partners/mage.png">
+  <img alt="metrotile" title="metrotile" src="assets/images/partners/metrotile.png">
+  <img alt="nelskamp" title="nelskamp" src="assets/images/partners/nelskamp.png">
+  <img alt="nicoband" title="nicoband" src="assets/images/partners/nicoband.png">
+  <img alt="orima" title="orima" src="assets/images/partners/orima.png">
+  <img alt="prefa" title="prefa" src="assets/images/partners/prefa.png">
+  <img alt="rheinzink" title="rheinzink" src="assets/images/partners/rheinzink.png">
+  <img alt="ruukki" title="ruukki" src="assets/images/partners/ruukki.png">
+  <img alt="severstal" title="severstal" src="assets/images/partners/severstal.png">
+  <img alt="sheetrock" title="sheetrock" src="assets/images/partners/sheetrock.png">
+  <img alt="ssab" title="ssab" src="assets/images/partners/ssab.png">
+  <img alt="technikol" title="technikol" src="assets/images/partners/technikol.png">
+  <img alt="terreal" title="terreal" src="assets/images/partners/terreal.png">
+  <img alt="tilcor" title="tilcor" src="assets/images/partners/tilcor.png">
+  <img alt="toiler" title="toiler" src="assets/images/partners/toiler.png">
+  <img alt="tyvek" title="tyvek" src="assets/images/partners/tyvek.png">
+  <img alt="weber" title="weber" src="assets/images/partners/weber.png">
+  <img alt="zubr" title="zubr" src="assets/images/partners/zubr.png">
+</div>
+
+
+<p class="title" id="contacts">НАШИ КОНТАКТЫ</p>
+<div class="contacts">
+  <!--<a title="Наша группа ВКонтакте" href="https://vk.com/" target="_blank">
+    <img alt="VK РостЗаказ" src="assets/images/vk.png">
+  </a>-->
+  <p>г. Ростов-на-Дону &#8211; +7-(988)-899-48-29 , +7-(928)-136-96-71 , +7-(918)-511-27-89</p>
+  <p><b>e-mail:</b> 9888994829@mail.ru , rostzakaz@list.ru , E9185112789@gmail.com</p>
+  <div class="copyright">
+    <p>Copyright &#169; ООО "РостЗаказ" 2007-2017. Все права защищены</p>
+  </div>
+</div>
+
+</footer>
+<!-- /футер -->
+<script src="assets/script.js"></script>
+
+<!-- BEGIN JIVOSITE CODE {literal} -->
+<script asunc type='text/javascript'>
+(function(){ var widget_id = 'KvJnDxkAvU';var d=document;var w=window;function l(){
+var s = document.createElement('script'); s.type = 'text/javascript'; s.async = true; s.src = '//code.jivosite.com/script/widget/'+widget_id; var ss = document.getElementsByTagName('script')[0]; ss.parentNode.insertBefore(s, ss);}if(d.readyState=='complete'){l();}else{if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})();</script>
+<!-- {/literal} END JIVOSITE CODE -->
+
+</body>
+</html>
+
