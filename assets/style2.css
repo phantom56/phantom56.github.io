@@ -387,9 +387,6 @@ header a:hover{
   max-width:25%;
   width:25%;
 }
-.news_item:hover{
-  background:#131E38;
-}
 .news_item img {
   margin-top: 10px;
   width: 100%;
