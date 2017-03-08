@@ -103,7 +103,7 @@ window.onload = function(){
     }
 
     /* конфигурация */
-    var width = 130; // ширина изображения
+    var width = 110; // ширина изображения
     var count = 4; // количество изображений
 
     var carousel = document.getElementById('carousel');

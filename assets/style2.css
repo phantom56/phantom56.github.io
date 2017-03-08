@@ -66,7 +66,7 @@
 
 .arrow {
   position: absolute;
-  top: 60px;
+  top: 52px;
   padding: 0;
   background: #ddd;
   border-radius: 15px;
@@ -75,6 +75,7 @@
   line-height: 24px;
   color: #444;
   display: block;
+  z-index:999;
 }
 
 .arrow:focus {
@@ -87,15 +88,15 @@
 }
 
 .prev {
-  left: 7px;
+  left: 0;
 }
 
 .next {
-  right: 7px;
+  right: 0;
 }
 
 .gallery {
-  width: 541px;
+  width: 470px;
   margin: 0 auto;
   overflow: hidden;
   position:relative;
@@ -125,7 +126,8 @@
 }
 
 .carousel img {
-  width: 130px;
+	width: 80px;
+	padding-left: 30px;
   /* по умолчанию inline, в ряде браузеров это даст лишнее пространство вокруг элементов */
 
   display: block;
