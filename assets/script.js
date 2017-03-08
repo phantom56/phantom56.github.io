@@ -90,7 +90,8 @@ window.onload = function(){
 //slider
 
 /* этот код помечает картинки, для удобства разработки */
-    var lis = document.getElementsByTagName('li');
+    
+    var lis = document.getElementById('carousel').getElementsByTagName('li');
     for (var i = 0; i < lis.length; i++) {
       lis[i].style.position = 'relative';
       var span = document.createElement('span');
@@ -103,7 +104,7 @@ window.onload = function(){
 
     /* конфигурация */
     var width = 130; // ширина изображения
-    var count = 3; // количество изображений
+    var count = 4; // количество изображений
 
     var carousel = document.getElementById('carousel');
     var list = carousel.querySelector('ul');
