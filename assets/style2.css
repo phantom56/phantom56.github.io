@@ -65,17 +65,17 @@
 
 
 .arrow {
-  position: absolute;
-  top: 52px;
-  padding: 0;
-  background: #ddd;
-  border-radius: 15px;
-  border: 1px solid gray;
-  font-size: 24px;
-  line-height: 24px;
-  color: #444;
-  display: block;
-  z-index:999;
+	position: absolute;
+	top: 52px;
+	padding: 0;
+	background: #fff;
+	border-radius: 15px;
+	border: 1px solid;
+	font-size: 24px;
+	line-height: 20px;
+	color: black;
+	display: block;
+	z-index: 999;
 }
 
 .arrow:focus {
@@ -117,7 +117,6 @@
 
 .gallery li {
   display: inline-block;
-  vertical-align: middle;
 }
 .carousel {
   position: relative;
