@@ -75,7 +75,7 @@
 	line-height: 20px;
 	color: black;
 	display: block;
-	z-index: 999;
+	z-index: 99;
 }
 
 .arrow:focus {
