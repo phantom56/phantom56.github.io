@@ -95,9 +95,10 @@
 }
 
 .gallery {
-  width: 520px;
+  width: 541px;
   margin: 0 auto;
   overflow: hidden;
+  position:relative;
 }
 
 .gallery ul {
@@ -115,6 +116,7 @@
 
 .gallery li {
   display: inline-block;
+  vertical-align: middle;
 }
 .carousel {
   position: relative;
@@ -124,7 +126,6 @@
 
 .carousel img {
   width: 130px;
-  height: 130px;
   /* по умолчанию inline, в ряде браузеров это даст лишнее пространство вокруг элементов */
 
   display: block;
