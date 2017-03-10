@@ -620,7 +620,7 @@ footer .contacts p:not(.title){
 
 /*    advantages    */
 ul.advantages{
-	
+	padding-top: 5%
 }
 ul.advantages li{
 	list-style: none;
@@ -633,14 +633,14 @@ ul.advantages li{
 }
 ul.advantages li:first-child{margin-left: 0;}
 ul.advantages li img{
-	width: 50%;
+	width: 40%;
 	display: block;
-	margin: 0 auto
+	margin: 0 auto;
 }
 ul.advantages li p{
-	padding: 5% 10%;
-	text-align: center
-	
+	padding: 5% 0;
+	text-align: center;
+	font-size: 1.1em
 }
 
 .clear{clear:both;}
