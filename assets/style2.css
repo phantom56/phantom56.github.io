@@ -618,8 +618,32 @@ footer .contacts p:not(.title){
 }
 /* ### /products  */
 
+/*    advantages    */
+ul.advantages{
+	
+}
+ul.advantages li{
+	list-style: none;
+	display: inline-block;
+	width: 20%;
+	float:left;
+	margin-left: 5%;
+	margin-bottom: 5%;
+	
+}
+ul.advantages li:first-child{margin-left: 0;}
+ul.advantages li img{
+	width: 50%;
+	display: block;
+	margin: 0 auto
+}
+ul.advantages li p{
+	padding: 5% 10%;
+	text-align: center
+	
+}
 
-
+.clear{clear:both;}
 @media screen and (max-width: 960px) {
   
 }
