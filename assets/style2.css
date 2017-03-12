@@ -607,7 +607,7 @@ footer .contacts p:not(.title){
   background: #FFFFFF;
   display: none;
   top: 0;
-  right: -110%;
+  right: -100%;
   position: absolute;
   z-index: 99;
   padding: 0;
