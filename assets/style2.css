@@ -638,7 +638,7 @@ footer .contacts p:not(.title){
 #list_products .menu_item .extendable:after{
   content: ' +';
   position: absolute;
-  right: -6px;
+  right: 12px;
 	font-size: 1.3em;
   top: 0;
 }
