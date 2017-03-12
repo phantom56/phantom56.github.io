@@ -559,7 +559,6 @@ footer .contacts p:not(.title){
 
 /*  /products  */
 #list_products{
-  padding: 60px 20px;
   overflow:hidden;
   padding:0 20px;
 }
@@ -571,32 +570,44 @@ footer .contacts p:not(.title){
 	zoom: 1;
   vertical-align: top;
   margin: 40px 20px;
-  padding: 20px;
-  padding-right:44px;
   -webkit-box-shadow: 0 0 4px rgba(0,0,0,0.5);
   -moz-box-shadow: 0 0 4px rgba(0,0,0,0.5);
   box-shadow: 0 0 4px rgba(0,0,0,0.5);
-  color: #111118;
+  color: #e47f00;
   font-size: 1.2em;
   font-weight:900;
   text-transform:uppercase;
   position: relative;
 }
+#list_products .menu_item h1{
+	background: #f2f5f7;
+	margin: 0;
+		color: #1B2D57;
+	margin-bottom: 10px;
+  font-size: 1.2em;
+	padding: 4px 20px;
+}
+#list_products .menu_item ul{
+}
+#list_products .menu_item ul li:last-child{
+		margin-bottom: 10px
+}
 #list_products .menu_item ul li{
-  padding: 8px 12px;
+  padding: 2px 12px;
   list-style: none;
-  color: #00ADAD;
+  color: #1B2D57;
   text-shadow: none;
   font-size: 0.95em;
   position:relative;
   font-weight: normal;
+  padding-right:44px;
   
 }
 #list_products .menu_item ul li ul{
   background: #FFFFFF;
   display: none;
   top: 0;
-  right: -140px;
+  right: -110%;
   position: absolute;
   z-index: 99;
   padding: 0;
@@ -610,7 +621,7 @@ footer .contacts p:not(.title){
 #list_products .menu_item ul li ul li{
   font-size:0.9em;  
 }
-#list_products .menu_item:before{
+/*#list_products .menu_item:before{
   content: '';
   position: absolute;
   right: -4px;
@@ -620,15 +631,16 @@ footer .contacts p:not(.title){
   background-repeat: no-repeat;
   background-size: 100%;
   background-image: url('images/nail_big.png')
-}
+}*/
 #list_products .menu_item .extendable{
   
 }
 #list_products .menu_item .extendable:after{
   content: ' +';
   position: absolute;
-  right: -4px;
-  top: 9px;
+  right: -6px;
+	font-size: 1.3em;
+  top: 0;
 }
 .visible{
   display:inline-block!important;

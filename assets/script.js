@@ -87,7 +87,7 @@ window.onload = function(){
 
 (function(){ 
 
-//slider
+                                                                                                   /* SLIDER*/
 
 /* этот код помечает картинки, для удобства разработки */
     
@@ -127,7 +127,7 @@ window.onload = function(){
     };
 
 
-    
+                                                                                                    /*  SLIDER*/
     
     
   //прыгает живосайт
