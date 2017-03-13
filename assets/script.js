@@ -54,7 +54,7 @@ window.onload = function(){
   function getOffset(elem) {
     var top = elem.getBoundingClientRect()['top'] - 70;//получаем значение
     var left = elem.getBoundingClientRect()['left'];
-    console.log(window.scrollBy(left, top));//прокручиваем
+    //console.log(window.scrollBy(left, top));//прокручиваем
   }
   toAnchor = function(){
     getOffset(document.getElementById(this.getAttribute('href').split('#')[1]));//передаем объект - цель
@@ -86,6 +86,92 @@ window.onload = function(){
 
 
 (function(){ 
+
+                                                                                                   /* ПРЕДЛОЖЕНИЕ РАЗВЕРНУТЬ ПЕРЕЧЕНЬ ПРОДУКЦИИ */
+  var show_products = document.getElementById('show-products');
+  var list_products = document.getElementById('list_products');
+  
+  function getOffsetSum(elem) {
+    var top=0, left=0
+    while(elem) {
+        top = top + parseFloat(elem.offsetTop)
+        left = left + parseFloat(elem.offsetLeft)
+        elem = elem.offsetParent        
+    }
+    
+    return Math.round(top)
+}
+
+function getOffsetRect(elem) {
+    // (1)
+    var box = elem.getBoundingClientRect()
+    
+    // (2)
+    var body = document.body
+    var docElem = document.documentElement
+    
+    // (3)
+    var scrollTop = window.pageYOffset || docElem.scrollTop || body.scrollTop
+    
+    // (4)
+    var clientTop = docElem.clientTop || body.clientTop || 0
+    
+    // (5)
+    var top  = box.top +  scrollTop - clientTop
+    var bottom  = box.bottom +  scrollTop - clientTop
+    
+    return { top: Math.round(top), bottom: Math.round(bottom) }
+}
+
+
+function getOffset(elem) {
+    if (elem.getBoundingClientRect) {
+        // "правильный" вариант
+        return getOffsetRect(elem)
+    } else {
+        // пусть работает хоть как-то
+        return getOffsetSum(elem)
+    }
+}
+
+//console.log(getOffset(list_products));
+var window_height = window.innerHeight
+|| document.documentElement.clientHeight
+|| document.body.clientHeight;
+var scrolled;
+var isShow = false;
+window.onscroll = function() {
+   scrolled = window.pageYOffset || document.documentElement.scrollTop;
+  
+  if(scrolled >= getOffset(list_products).top - window_height/1.3 && scrolled <= getOffset(list_products).bottom - window_height/1.3){
+  console.log("getOffset(list_products).top - window_height: " + (getOffset(list_products).top - window_height));
+  console.log("getOffset(list_products).bottom - window_height: " + (getOffset(list_products).bottom - window_height));
+    if(!isShow)
+      show_products.classList.add('fixed-show-products');
+
+  }
+  else {
+    show_products.classList.remove('fixed-show-products');
+    isShow = false;
+  }
+  
+  console.log("scrolled: " + scrolled);
+  console.log("getOffset(list_products).top: " + getOffset(list_products).top);
+  console.log("getOffset(list_products).bottom: " + getOffset(list_products).bottom);
+  console.log("window_height: " + window_height);
+  
+}
+
+
+
+
+
+
+
+
+
+
+                                                                                               /* ПРЕДЛОЖЕНИЕ РАЗВЕРНУТЬ ПЕРЕЧЕНЬ ПРОДУКЦИИ */
 
                                                                                                    /* SLIDER*/
 
@@ -144,7 +230,6 @@ window.onload = function(){
         return;
       }
       count++;
-      console.log(count);
     }, 300);
   };
 
@@ -152,3 +237,6 @@ window.onload = function(){
  
   
 })();
+
+
+

@@ -589,6 +589,14 @@ footer .contacts p:not(.title){
 		display: block;
 	box-shadow: 0 4px 2px -4px rgba(0,0,0,0.5);
 }
+.fixed-show-products {
+		position: fixed;
+		bottom: 0;
+    padding: 2% 0!important;
+    background: #f2f5f7;
+    box-shadow: 0 -4px 4px -4px rgba(0,0,0,.5);
+    width: 100%;
+}
 #list_products .menu_item ul{
 }
 #list_products .menu_item ul li:last-child{
