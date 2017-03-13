@@ -144,8 +144,6 @@ window.onscroll = function() {
    scrolled = window.pageYOffset || document.documentElement.scrollTop;
   
   if(scrolled >= getOffset(list_products).top - window_height/1.3 && scrolled <= getOffset(list_products).bottom - window_height/1.3){
-  console.log("getOffset(list_products).top - window_height: " + (getOffset(list_products).top - window_height));
-  console.log("getOffset(list_products).bottom - window_height: " + (getOffset(list_products).bottom - window_height));
     if(!isShow)
       show_products.classList.add('fixed-show-products');
 
@@ -155,22 +153,44 @@ window.onscroll = function() {
     isShow = false;
   }
   
-  console.log("scrolled: " + scrolled);
-  console.log("getOffset(list_products).top: " + getOffset(list_products).top);
-  console.log("getOffset(list_products).bottom: " + getOffset(list_products).bottom);
-  console.log("window_height: " + window_height);
-  
 }
 
 
-
-
-
-
-
-
-
-
+/*var a = document.querySelector('#show-products'), b = null, P = 0;
+window.addEventListener('scroll', Ascroll, false);
+document.body.addEventListener('scroll', Ascroll, false);
+function Ascroll() {
+  if (b == null) {
+    var Sa = getComputedStyle(a, ''), s = '';
+  
+    b = document.createElement('div');
+    a.insertBefore(b, a.firstChild);
+    var l = a.childNodes.length;
+    for (var i = 1; i < l; i++) {
+      b.appendChild(a.childNodes[1]);
+    }
+  }
+  var Ra = a.getBoundingClientRect(),
+      R = Math.round(Ra.bottom - b.getBoundingClientRect().height - document.querySelector('#list_products').getBoundingClientRect().top);  // селектор блока, при достижении нижнего края которого нужно открепить прилипающий элемент
+      console.log(Math.round(Ra.bottom - b.getBoundingClientRect().height - document.querySelector('#list_products').getBoundingClientRect().top));
+      console.log(Math.round(Ra.top));
+  if ((Ra.bottom - P) <= 0) {
+    if ((Ra.bottom - P) <= R) {
+      b.className = 'stop';
+      b.style.bottom = - R +'px';
+    } else {
+      b.className = 'sticky';
+      b.style.bottom = P + 'px';
+    }
+  } else {
+    b.className = '';
+    b.style.bottom = '';
+  }
+  window.addEventListener('resize', function() {
+    a.children[0].style.width = getComputedStyle(a, '').width
+  }, false);
+}
+*/
                                                                                                /* ПРЕДЛОЖЕНИЕ РАЗВЕРНУТЬ ПЕРЕЧЕНЬ ПРОДУКЦИИ */
 
                                                                                                    /* SLIDER*/

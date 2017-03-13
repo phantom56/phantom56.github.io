@@ -597,6 +597,18 @@ footer .contacts p:not(.title){
     box-shadow: 0 -4px 4px -4px rgba(0,0,0,.5);
     width: 100%;
 }
+.sticky {
+  position: fixed;
+  z-index: 101;
+}
+.stop {
+  position: relative;
+  z-index: 101;
+}
+#article{
+		height: 100px;
+		background: red;
+}
 #list_products .menu_item ul{
 }
 #list_products .menu_item ul li:last-child{
