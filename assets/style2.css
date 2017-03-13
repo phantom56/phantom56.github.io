@@ -136,11 +136,13 @@
 
   display: block;
 }
+.carousel p:not(:last-child){margin-bottom: 0px!important;}
 .carousel p{
 	color:#e47f00;
 	font-size: 1.6em;
 	margin-bottom: 40px;
 }
+.carousel p b{color:#000}
 
 
 
