@@ -136,6 +136,11 @@
 
   display: block;
 }
+.carousel p{
+	color:#e47f00;
+	font-size: 1.6em;
+	margin-bottom: 40px;
+}
 
 
 
