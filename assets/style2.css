@@ -465,7 +465,6 @@ header a:hover{
   font-size: 1.4em;
   padding: 40px 10%;
   margin: 0;
-  font-family: Museo, sans-serif;
 }
 .info{
   text-align: center;
@@ -491,25 +490,27 @@ header a:hover{
 /* топ новости */
 .topNews{
   margin: 0 auto;
-  width: 85%;
-  display:block;
+  width: 80%;
   padding:40px 0;
 }
 .news{
-  display:table;
+	margin: 0;
+	width: 100%;
 }
 .news_item {
-  padding:1%;
-  display: table-cell;
+  display: inline-block;
   text-align:center;
-  max-width:25%;
-  width:25%;
+  width:23%;
+	float: left;
+	margin-left: 2%!important;
 }
-.news_item img {
-  margin-top: 10px;
-  width: 100%;
+.news_item:first-child {
+	margin-left: 0!important;
+}
+.news_item img{
+	width: 100%;
+}
 
-}
 .news_item  p{
   margin-top: 5%;
 }
