@@ -138,7 +138,7 @@
 }
 .carousel p:not(:last-child){margin-bottom: 0px!important;}
 .carousel p{
-	color:#e47f00;
+	color:red;
 	font-size: 1.6em;
 	margin-bottom: 40px;
 }
@@ -188,7 +188,7 @@ color: #FAFAFA;
   padding: 4%;
   margin:0;
   text-align: center;
-  color: #e47f00;
+  color: red;
 }
 
 /* preloader */
@@ -243,7 +243,7 @@ header{
   -webkit-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   -moz-box-shadow: 0 2px 4px rgba(0,0,0,0.2);
   box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-  background: #131E38;
+  background: #ca2f2f;
   color: #e47f00;
   position: fixed;
   width: 100%;
@@ -270,10 +270,10 @@ header ul li{
   transition: all .1s;
 }
 header ul li:hover{
-  background: #E47F00;
-  -webkit-box-shadow: 0 2px 4px 0px;
-  -moz-box-shadow: 0 2px 4px 0px;
-  box-shadow: 0 2px 4px 0px;
+  background: rgba(0,0,0,.2);
+  -webkit-box-shadow: 0 2px 4px 0px rgba(0,0,0,.4);
+  -moz-box-shadow: 0 2px 4px 0px rgba(0,0,0,.4);
+  box-shadow: 0 2px 4px 0px rgba(0,0,0,.4);
 }
 header ul li:first-child{
   padding:0;
@@ -341,7 +341,7 @@ header a:hover{
 	font-weight: 700;
 }
 .preview_image p:last-child{
-	color: #e47f00;
+	color: red;
 }
 .preview_image b{
 	color:#fff;
@@ -358,7 +358,7 @@ header a:hover{
 }
 
 .content_wide.preview a{
-  background-color: #e47f00;
+  background-color: #ca2f2f;
   -webkit-box-shadow: inset 0 -2px 0 rgba(34,34,40,0.225);
   -moz-box-shadow: inset 0 -2px 0 rgba(34,34,40,0.225);
   box-shadow: inset 0 -2px 0 rgba(34,34,40,0.225);
@@ -371,7 +371,7 @@ header a:hover{
   zoom: 1;
 }
 .content_wide.preview a:hover{
-  background-color: #cd7200;
+  background-color: #B12E2E;
 }
 .content_wide.preview h1{
   margin-top:0;
@@ -462,7 +462,7 @@ header a:hover{
 
 
 .content_wide.news{
-  background:#1B2D57;
+  background:#fff;
 }
 .content_wide.price{
   background:#1B2D57;
@@ -520,6 +520,7 @@ header a:hover{
 
 .news_item  p{
   margin-top: 5%;
+	color: #000;
 }
 /* /топ новости */
 
@@ -541,7 +542,7 @@ footer p{
   text-align:center;
 }
 #partners{
-  background:#fff;
+  background:#f2f5f7;
 }
 footer .partners, footer .contacts{
   text-align: center;
@@ -678,14 +679,19 @@ footer .contacts p:not(.title){
 #show-products{
   text-align:center;
   padding:4%;
-  color:#E47F00;
+  color:red;
 }
 #show-products span:hover{
-  
+  color: #ca2f2f;
+  border-color: red;
 }
 #show-products span{
   cursor:pointer;
 	font-size: 1.4em;
+	border:1px solid red;
+	border-radius: 50px;
+	padding: 8px 14px;
+	
 }
 /* ### /products  */
 
