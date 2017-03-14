@@ -69,16 +69,36 @@
 
 
 
+.arrow:after {
+	content:'.';
+	color: rgba(0,0,0,0);
+	display: block;
+	width: 15px;
+	padding: 0;
+	background-image: url(images/inset.png);
+	background-repeat: no-repeat;
+	background-size: 100% 15px;
+}
+.arrow:first-child:after {
+	transform: rotate(90deg);
+	margin-left: -2px;
+}
+.arrow:last-child:after {
+	transform: rotate(270deg);
+	margin-left:12px;
+}
 .arrow {
 	position: absolute;
-	top: 52px;
 	padding: 0;
-	background: #fff;
-	border-radius: 15px;
-	border: 1px solid;
+	top: 0;
+	width: 25px;
+	background: #CCC;
+	border-radius: 2px;
+	border: 0;
 	font-size: 24px;
-	line-height: 20px;
-	color: black;
+	height: 130px;
+	overflow:: hidden;
+	
 	display: block;
 	z-index: 99;
 }
@@ -88,7 +108,7 @@
 }
 
 .arrow:hover {
-  background: #ccc;
+  background: #B3B3B3;
   cursor: pointer;
 }
 
@@ -101,10 +121,11 @@
 }
 
 .gallery {
-  width: 470px;
+  width: 630px;
   margin: 0 auto;
   overflow: hidden;
   position:relative;
+	background: #fff;
 }
 
 .gallery ul {
@@ -114,26 +135,22 @@
   padding: 0;
   list-style: none;
   transition: margin-left 250ms;
-  /* remove white-space between inline-block'ed li */
-  /* http://davidwalsh.name/remove-whitespace-inline-block */
-
   font-size: 0;
 }
 
 .gallery li {
   display: inline-block;
+	vertical-align: middle
 }
 .carousel {
   position: relative;
-  padding: 10px 40px;
+  padding: 40px 0;
   background: white;
 }
 
 .carousel img {
-	width: 80px;
+	width: 120px;
 	padding-left: 30px;
-  /* по умолчанию inline, в ряде браузеров это даст лишнее пространство вокруг элементов */
-
   display: block;
 }
 .carousel p:not(:last-child){margin-bottom: 0px!important;}
