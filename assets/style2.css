@@ -396,6 +396,9 @@ header a:hover{
 .content_wide.preview h1:first-child{
   margin-top:120px;
 }
+.content_wide.preview h2 {
+	color: #111118;
+}
 #spec{
   position:fixed;
   top:-500px;

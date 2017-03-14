@@ -49,7 +49,7 @@ window.onload = function(){
   
   
   //прокрутка к якорю
-  var navigate_link = document.getElementsByClassName('navigate-link');
+  /*var navigate_link = document.getElementsByClassName('navigate-link');
   
   function getOffset(elem) {
     var top = elem.getBoundingClientRect()['top'] - 70;//получаем значение
@@ -63,7 +63,7 @@ window.onload = function(){
   for (var i = 0, navigate_link; navigate_link < navigate_link[i]; i++)
     navigate_link[i].onclick = toAnchor;
   
-  
+  */
   
   
   //развертывание категории товара
