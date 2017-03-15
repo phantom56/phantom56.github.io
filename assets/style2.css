@@ -623,11 +623,20 @@ footer .contacts p:not(.title){
 }
 .fixed-show-products {
 		position: fixed;
-		bottom: 0;
-    padding: 2% 0!important;
-    background: #f2f5f7;
+		bottom: 0!important;
+    padding: 24px 0!important;
+    background: #CA2F2F;
     box-shadow: 0 -4px 4px -4px rgba(0,0,0,.5);
     width: 100%;
+}
+.fixed-show-products span{
+	color:#fff;
+	border-color: #fff!important;
+}
+.fixed-show-products span:hover{
+	color:#f2f5f7!important;
+	border-color:#f2f5f7!important;
+	background: #B12E2E;
 }
 .sticky {
   position: fixed;
@@ -703,6 +712,8 @@ footer .contacts p:not(.title){
   text-align:center;
   padding:4%;
   color:red;
+	bottom: -100px;
+	transition: bottom 250ms;
 }
 #show-products span:hover{
   color: #ca2f2f;
