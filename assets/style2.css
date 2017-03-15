@@ -207,6 +207,9 @@ color: #FAFAFA;
   text-align: center;
   color: red;
 }
+.title sup {
+	font-size: .6em
+}
 
 /* preloader */
 #preloader-block{
