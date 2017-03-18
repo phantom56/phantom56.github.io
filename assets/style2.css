@@ -229,7 +229,7 @@ color: #FAFAFA;
 }
 #preloader-runner{
   position: absolute;
-  background: #1B2D57;
+  background: #ca2f2f;
   -webkit-box-shadow: 0 0 15px;
   -moz-box-shadow: 0 0 15px;
   box-shadow: 0 0 15px;
@@ -755,6 +755,49 @@ ul.advantages li p{
 	text-align: center;
 	font-size: 1.1em
 }
+
+.content_wide.request {
+}
+.content_wide.request form {
+	margin: 0 auto;
+	padding: 5% 0;
+	width: 40%
+}
+.content_wide.request input[id="email"], .content_wide.request input[id="phone"]{
+	
+}
+.content_wide.request textarea {
+	margin-bottom: 3%;
+	width: 100%;
+	outline: 0;
+	box-shadow: 0 0 0 1px #ca2f2f inset;
+	border: 0;
+	padding: 16px 14px;
+	box-sizing: border-box;
+	font-family: 'museo', sans-serif;
+	font-size: 1em;
+	text-indent: 14px;
+}
+.content_wide.request input{
+	outline: 0;
+	border: 0;
+	padding: 8px 14px;
+	box-shadow: 0 0 0 1px #ca2f2f inset, 0 -1px 2px red inset;
+	border-radius: 50px;
+	text-align: center;
+	font-size: 1.2em;
+	color: #ca2f2f;
+	width: 100%;
+	margin-bottom: 3%;
+	display: inline-block;
+	box-sizing: border-box;
+	
+}
+.content_wide.request input[type="submit"]{
+	background: #fff;
+	
+}
+.content_wide.request {}
 
 .clear{clear:both;}
 @media screen and (max-width: 960px) {
