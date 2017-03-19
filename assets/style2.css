@@ -207,6 +207,8 @@ color: #FAFAFA;
   margin:0;
   text-align: center;
   color: red;
+	-webkit-margin-before-collapse: discard;
+  -webkit-margin-after-collapse: discard;
 }
 .title sup {
 	font-size: .6em
@@ -568,6 +570,7 @@ footer p{
 }
 #partners{
   background:#f2f5f7;
+	margin: 0;
 }
 footer .partners, footer .contacts{
   text-align: center;
