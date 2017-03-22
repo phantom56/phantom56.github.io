@@ -66,21 +66,7 @@ window.onload = function(){
   */
   
   
-  //развертывание категории товара
-  var list_products = document.getElementById('list_products');
-  var menu_item = list_products.getElementsByClassName('extendable');
-  
-  show_menu_items = function(){
-      this.getElementsByTagName('ul')[0].style.display = "inline-block";
-  }
-  hide_menu_items = function(){
-      this.getElementsByTagName('ul')[0].style.display = "none";
-  }
-  
-  for (var i = 0, menu_item; menu_item < menu_item[i]; i++)
-    menu_item[i].onmouseover = show_menu_items;
-  for (var i = 0, menu_item; menu_item < menu_item[i]; i++)
-    menu_item[i].onmouseout = hide_menu_items;
+
   
 };
 
@@ -209,7 +195,7 @@ function Ascroll() {
     }
 
     /* конфигурация */
-    var width = 150; // ширина изображения
+    var width = 160; // ширина изображения
     var count = 4; // количество изображений
 
     var carousel = document.getElementById('carousel');
