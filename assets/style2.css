@@ -5,6 +5,18 @@
   font-weight: 300;
   src: url('Handbook.ttf');
 }
+@font-face {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 300;
+  src: url('Ro.ttf');
+}
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  src: url('Open Sans.ttf');
+}
 
 
 
@@ -97,7 +109,7 @@
 }
 .carousel p:not(:last-child){margin-bottom: 0px!important;}
 .carousel p{
-	color:red;
+	color:#ca2f2f;
 	font-size: 1.6em;
 	margin-bottom: 40px;
 }
@@ -123,7 +135,7 @@ img{
 }
 body{
   margin: 0;
-  font-family: 'Handbook', sans-serif;
+  font-family: 'Handbook', 'Roboto', 'Open Sans', sans-serif;
   background:#f2f5f7;
   
 }
@@ -147,7 +159,7 @@ color: #FAFAFA;
   padding: 4%;
   margin:0;
   text-align: center;
-  color: #009688;
+  color: #ca2f2f;
 	letter-spacing: 2px;
 	font-weight: bold;
 	-webkit-margin-before-collapse: discard;
@@ -309,7 +321,7 @@ header a:hover{
 	font-weight: 700;
 }
 .preview_image p:last-child{
-	color: red;
+	color: #ca2f2f;
 }
 .preview_image b{
 	color:#fff;
@@ -580,7 +592,7 @@ footer .contacts p:not(.title){
 		position: fixed;
 		bottom: 0!important;
     padding: 24px 0!important;
-    background: #009688;
+    background: #ca2f2f;
     box-shadow: 0 -4px 4px -4px rgba(0,0,0,.5);
     width: 100%;
 }
